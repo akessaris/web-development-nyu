@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+ <!--Part 1: Mad Libs Application -->	
+	<h1>Mad Libs Application</h1>
+	<form action="madlib.php" method="post" id="madlib">
+		Noun 1:<input type="text" name="noun1" id="noun1" required><br>
+                Noun 2:<input type="text" name="noun2" id="noun2" required><br>
+                Noun 3:<input type="text" name="noun3" id="noun3" required><br>
+
+                Adjective 1:<input type="text" name="adj1" id="adj1" required><br>
+                Adjective 2:<input type="text" name="adj2" id="adj2" required><br>
+
+                Verb 1:<input type="text" name="verb1" id="verb1" required><br>
+                Verb 2:<input type="text" name="verb2" id="verb2" required><br>
+
+                Number: <input type="number" name="num" id="num" required><br>
+
+                <input type="submit" required>
+	</form>
+
+	<hr>
+
+ <!--Part 2: Calculator -->
+	<h1>Calculator</h1>
+	<form action="add.php" method="post" id="calc">
+		<input type=number name="num1" placeholder=0><br>
+                <input type=number name="num2" placeholder=0><br>
+
+		<!--Operators-->
+                <input type="submit" value="+" name="operator">
+                <input type="submit" value="-" name="operator">
+                <input type="submit" value="*" name="operator">
+                <input type="submit" value="/" name="operator">
+                
+		<input type="reset" value="clear">
+
+	</form>
+	<hr>
+
+<!-- TODO: link .css file to receipt -->
+ <!--Part 3: Simple Online Store Form -->
+        <h1>Simple Online Store Form</h1>
+	
+	<form action="online.php" method="post" id="online">
+		Full Name:<input type="text" name="fullname">
+		Email:<input type="email" name="email"><br>
+		
+		Product
+		<select name="products" form="online">
+			<option value="dog">Dog ($100)</option>
+                        <option value="cat">Cat ($1)</option>
+		</select>
+
+		Quantity:<input type="number" name="quantity" min=0><br>
+		
+		<input type="submit" value="Submit">
+		<input type="reset" value="Reset">
+	</form>
+	<hr>
+
+ <!--Part 4: Online Quiz Application -->
+        <h1>Online Quiz Application</h1>
+	
+	<form action="quiz.php" method="post" id="quiz">
+                First Name:<input type="text" name="firstname" required>
+                Last Name:<input type="text" name="lastname" required>
+
+		<ol>
+			<li>What was my top tier patron reward for my "Fund My Extravagancies!" page?</li>
+				<input type="radio" name="q1" value="a selfie" required>A Selfie<br>
+				<input type="radio" name="q1" value="my eternal thanks">My Eternal Thanks<br>
+				<input type="radio" name="q1" value="an edible arrangement">Edible Arangement<br>
+				<input type="radio" name="q1" value="Dinner and a Show">Dinner and a Show<br>
+
+			<li>Who was my culinary inspiration for my website "Amateur Chef"?</li>
+                                <input type="radio" name="q2" value="Tony Hawk" required>Tony Hawk<br>
+                                <input type="radio" name="q2" value="Guy Fieri">Guy Fieri<br>
+                                <input type="radio" name="q2" value="Binging with Babish">Binging with Babish<br>
+                                <input type="radio" name="q2" value="YSAC">You Suck at Cooking (YSAC)<br>
+
+			<li>Who's your favorite student in Web Development and Programming?</li>
+				<input type="radio" name="q3" value="John Smith" required>John Smith<br>
+                                <input type="radio" name="q3" value="Plain Jane">Plain Jane<br>
+                                <input type="radio" name="q3" value="Me!">Me!<br>
+                                <input type="radio" name="q3" value="literally anyone besides me">literally anyone besides me<br>
+
+			<li>The answer to this question is false.</li>
+                                <input type="radio" name="q4" value="True" required>True<br>
+                                <input type="radio" name="q4" value="False">False<br>
+		<ol>
+
+		<input type="submit" value="Score">
+	</form>	
+
+	<hr>
+  </body>
+
+</html>
+

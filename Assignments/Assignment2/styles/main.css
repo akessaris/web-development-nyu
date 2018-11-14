@@ -1,0 +1,26 @@
+/* This is the main CSS file for index.html */
+
+/* Body */
+body {
+  background-color: blue;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+#container {
+  width: 100%;
+  padding-top:20px;
+  padding-left:20px;
+  padding-right:20px;
+  padding-bottom:30px;
+}
+
+/* Lists */
+
+/* Main content */
+h1, h2, h3, h4, h5, h6 {
+  text-decoration: underline;
+  text-align: center;
+}

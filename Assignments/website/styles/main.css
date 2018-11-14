@@ -1,0 +1,125 @@
+/* Main CSS for desktop pages in "website" directory */
+@import "mobile.css";
+
+/* Content */
+section {
+  text-align: right;
+}
+
+header {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+/* Textual Content */
+h1, h2, h3, h4, h5, h6 {
+  color: yellow;
+  line-height: 1.5em;
+  font-family: Times, sans-serif;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+p {
+  color: yellow;
+  line-height: 1.5em;
+  font-family: Times, sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.col1 {
+  width:45%;
+  float: left;
+  margin-right:5%;
+  text-align: left;
+}
+
+.same-line {
+  float:left;
+  margin-right: 5%;
+}
+
+hr {
+  clear: both;
+}
+
+/* Form */
+form {
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  background-color: green;
+  color: white;
+}
+
+  form legend {
+    color: white;
+    line-height: 1em;
+    font-family: Times, sans-serif;
+    font-size: 2em;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  fieldset {
+    margin-bottom: 30px;
+  }
+
+  form textarea {
+    width: 75%;
+    height: 100%;
+    font: 1.2em Times, serif;
+  }
+
+  form#donation label[for=dog] {
+    background:url(../icons/dog.svg) no-repeat left 40%;
+    padding: 0 0 0 40px;
+    width: auto;
+  }
+
+  form#donation label[for=cat] {
+    background:url(../icons/cat.svg) no-repeat left 40%;
+    padding: 0 0 0 40px;
+    width: auto;
+  }
+
+
+  form#donation label[for=rat] {
+    background:url(../icons/rat.svg) no-repeat left 40%;
+    padding: 0 0 0 40px;
+    width: auto;
+  }
+
+  form#donation label[for=rock] {
+    background:url(../icons/stone.svg) no-repeat left 40%;
+    padding: 0 0 0 40px;
+    width: auto;
+  }
+
+.checkout {
+  text-align: center;
+  /*color:red;*/
+}
+
+.did_you_know{
+  width:45%;
+  float: left;
+  text-align: left;
+  background-color: red;
+}
+
+/* Images */
+img {
+  width:45%;
+}
+
+.preview-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

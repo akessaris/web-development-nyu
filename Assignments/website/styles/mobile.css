@@ -1,0 +1,210 @@
+/* Main CSS for pages in "website" directory */
+
+/* Body */
+body {
+  background-color: #572d6a;
+  margin: 0;
+  padding:0;
+}
+
+/* Container */
+#container {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Navigation */
+nav {
+  background: black;
+  width: 100%;
+  height: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  position: fixed;
+}
+
+/* Header */
+header {
+  margin-top: 60px;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+/* Lists */
+ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li {
+  float: left;
+  margin-right: 3%;
+}
+
+
+/* Textual Content */
+h1, h2, h3, h4, h5, h6 {
+  color: yellow;
+  line-height: 1em;
+  font-family: Times, sans-serif;
+  font-size: 1em;
+  text-align: center;
+  clear:both;
+}
+
+p {
+  color: yellow;
+  line-height: 1.5em;
+  font-family: Times, sans-serif;
+  font-size: 0.7em;
+  text-align: center;
+  clear:both;
+}
+
+
+hr {
+  clear: both;
+}
+
+/* Aside */
+aside {
+}
+
+.col1 {
+  width: 94%;
+  margin-left: 2%;
+  margin-right: 4%;
+  text-align: left;
+}
+
+.did_you_know{
+  width: 100%;
+  margin-bottom: 20px;
+  color:red;
+  background-color: red;
+  text-align: center;
+}
+
+hr {
+  clear: both;
+}
+
+/* Form */
+form {
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  background-color: green;
+  color: yellow;
+}
+
+form input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+form
+
+  form legend {
+    color: white;
+    line-height: 1em;
+    font-family: Times, sans-serif;
+    font-size: 1em;
+    text-align: left;
+  }
+
+  form textarea {
+    width:100%;
+    height:100%;
+  }
+
+  form#donation label[for=dog] {
+    background:url(../icons/dog.svg) no-repeat left 40%;
+    padding: 0 0 0 20px;
+    width: auto;
+  }
+
+  form#donation label[for=cat] {
+    background:url(../icons/cat.svg) no-repeat left 40%;
+    padding: 0 0 0 20px;
+    width: auto;
+  }
+
+
+  form#donation label[for=rat] {
+    background:url(../icons/rat.svg) no-repeat left 40%;
+    padding: 0 0 0 20px;
+    width: auto;
+  }
+
+
+  form#donation label[for=rock] {
+    background:url(../icons/stone.svg) no-repeat left 40%;
+    padding: 0 0 0 20px;
+    width: auto;
+  }
+
+  form#donation label[for=amex] {
+    background:url(../icons/amex.gif) no-repeat left 40%;
+    padding: 0 0 0 30px;
+    width: auto;
+  }
+
+  form#donation label[for=mastercard] {
+    background:url(../icons/mastercard.gif) no-repeat left 40%;
+    padding: 0 0 0 30px;
+    width: auto;
+  }
+
+  form#donation label[for=visa] {
+    background:url(../icons/visa.gif) no-repeat left 40%;
+    padding: 0 0 0 30px;
+    width: auto;
+  }
+
+/* Images */
+img {
+  display:block;
+  margin: auto;
+  width: 100%;
+}
+
+/* Video */
+video {
+  width: 100%;
+  height: auto;
+}
+
+/* Audio */
+audio {
+  width: 100%;
+  height: auto;
+}
+
+/* Links */
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:focus, a:hover {
+  color: gray;
+}
+
+a:active {
+  color: yellow;
+}

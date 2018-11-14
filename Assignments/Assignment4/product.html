@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Products</title>
+    <meta charset="utf-8">
+
+        <!-- Media query for narrow browser width -->
+        <link rel="stylesheet" media="only screen and (max-width: 600px)" href="../website/styles/mobile.css">
+
+        <!-- Media query for medium browser width -->
+        <link rel="stylesheet" media="only screen and (min-width: 601px)" href="../website/styles/main.css">
+
+        <!-- Prevent smartphones from scaling pages down -->
+        <meta name="viewport" content="initial-scale=1"></head>  </head>
+
+  <body>
+
+    <div id="container">
+
+    <!-- Navigation -->
+      <nav>
+        <ul>
+          <li><a href = "../website/index.html">Home</a></li>
+          <li><a href = "../website/biography.html">Biography</a></li>
+          <li><a href = "../website/extravagancies.html">Extravagancies</a></li>
+          <li><a href = "../website/patrons.html">Patrons</a></li>
+          <li><a href = "../website/donate.html">Donate</a></li>
+          <li><a href = "../Assignment4/product.html">Products</a></li>
+        </ul>
+      </nav>
+
+      <div id="content">
+
+        <!-- Header -->
+        <header>
+          <h1>Fund My Extravagancies!</h1>
+        </header>
+
+        <p>Fine...while I said I was too lazy to create Patron tier list of rewards, I am now academically obligated to compile a brief Patron Package list for my loving supporters.</p>
+
+        <form name="form1" action="#" onsubmit="receipt(); return false" >
+          <fieldset>
+            <legend>Dinner and a Show</legend>
+              <img src="images/master_chef.jpg" class="preview-image" src="" width="100" height="600" alt="Fine dining.">
+              <p class="image-caption">
+                For this top tier package, I will dress up in the outfit of your choosing, cook an extraordinary 3 course dinner, and then serenate you with my newfound piano ability.
+              </p>
+              <div class="same-line" style="margin-left:5%">
+                <label for="price">Price: $</label>
+                  <input type="number" name="price1" id="price1" value=10 readonly>
+              </div>
+
+              <div class="same-line">
+                <label for="quantity" >Quantity Ordered: </label>
+                  <input type="number" name="quantity1" id="quantity1" value=0 min=0 onchange="total()" >
+              </div>
+
+              <div class="same-line">
+                <label for="subtotal">Subtotal: $</label>
+                  <input type="number" name="subtotal1" id="subtotal1" value=0 readonly>
+              </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>With Thanks</legend>
+              <img src="images/winter-selfie.JPG" class="preview-image" src="" width="500" height="300" alt="Selfie.">
+              <p class="image-caption">
+                For this low tier package, I will write a handwritten letter to you, thanking you for funding my extravangies. Each letter will also include a selfie of me from an adventure that you helped finance!
+              </p>
+              <div class="same-line" style="margin-left:5%">
+                <label for="price">Price: $</label>
+                  <input type="number" name="price2" id="price2" value=5 readonly>
+              </div>
+
+              <div class="same-line">
+                <label for="quantity">Quantity Ordered: </label>
+                  <input type="number" name="quantity2" id="quantity2" min=0 value=0 onchange="total()" >
+              </div>
+
+              <div class="same-line">
+                <label for="subtotal">Subtotal: $</label>
+                  <input type="number" name="subtotal2" id="subtotal2" value=0 readonly>
+              </div>
+          </fieldset>
+
+          <label for="delivery">Delivery Method: </label>
+            <label for="call">Will-Call</label>
+              <input type="radio" name="shipping" id="call" value="call" onchange="total()" required>
+            <label for="delivery">Delivery</label>
+              <input type="radio" name="shipping" id="delivery" value="delivery" onchange="total()">
+
+          <div style="text-align:center">
+            <label for="shipping-cost">Shipping Cost: $</label>
+              <input type="number" name="shipping" id="shipping" value=5 readonly>
+          </div>
+
+          <fieldset>
+            <legend>Personal Information</legend>
+            <div class="same-line">
+              <label for="full-name">Full Name: </label>
+                <input type="text" name="Full Name" id="full-name" placeholder="John Smith">
+            </div>
+
+            <div class="same-line">
+              <label for="phone-number">Phone #: </label>
+                <input type="tel" name="Phone Number" id="phone" placeholder="9187329999">
+            </div>
+
+            <div class="same-line">
+              <label for="email">Email: </label>
+                <input type="mail" name="Email" id="email" placeholder="my-email@website.com">
+            </div>
+
+            <br>
+
+            <div class="same-line">
+              <label for="address">Address: </label>
+                <input type="text" name="Address" id="address" placeholder="42 Wallaby Way">
+            </div>
+
+            <div class="same-line">
+              <label for="state">State: </label>
+                <select name="State" id="states">
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="DC">District Of Columbia</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY" selected>New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
+                </select>
+            </div>
+
+            <div class="same-line">
+              <label for="zip">Zip: </label>
+                <input type="number" name="Zip Code" id="zip" min=0 max=99999>
+            </div>
+
+            <hr>
+
+    <!-- Credit Card Info -->
+            <p>Credit Card Information:</p>
+
+            <div class="same-line">
+              <label for="cc-type">Credit Card Type: </label>
+                <select name="Credit Card Type" id="mySelect" onchange="swap()">
+                  <option value="amex">AMEX</option>
+                  <option value="visa">Visa</option>
+                  <option value="mastercard">Mastercard</option>
+                </select>
+            </div>
+
+            <div class="same-line">
+              <label for="cc-num">Number: </label>
+                <input type="number" name="Credit Card Number" id="cc-num" min=0 max=9999999999999999>
+            </div>
+
+            <div class="same-line">
+              <label for="exp-date">Expiration Date: </label>
+                <input type="date" name="Expiration Date" id="exp-date">
+            </div>
+
+            <div class="same-line">
+              <label for="cc-code">Code: </label>
+                <input type="number" name="Credit Card Code" id="cc-code" min="0">
+            </div>
+
+            <img id="cc-image" src="images/cc-security-codes-back.png" alt="Where to find security code.">
+
+          </fieldset>
+
+          <!-- Calculate grand total -->
+          <div class="checkout">
+            <label for="grand-total">Grand Total: $</label>
+              <input type="number" name="Grand Total" id="grand-total" value=0 readonly>
+
+              <br>
+
+            <button type="submit" value="Submit">Check out</button>
+            <button type="reset" value="Reset" onclick="reset()">Reset</button>
+          </div>
+          <p>
+            Click on Check out button to list information (Receipt) on a new page:
+          </p>
+
+        </form>
+      </div>  <!-- Closing div tag for #content --->
+    </div>  <!-- Closing div tag for #container --->
+
+      <script src="cart.js"></script>
+
+  </body>
+
+<!-- Image Attributions:
+
+https://www.creditcards.com/credit-card-news/images/cc-security-codes-back-2.png
+https://secure.bmtmicro.com/resources/info/security_code_.gif
+https://www.inspiredliving.com/_sharedimg/amexcardcode.gif
+
+ -->
+</html>

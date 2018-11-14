@@ -1,0 +1,39 @@
+/* CSS file for asg5.html */
+body {
+  background-color: blue;
+  color:white;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: sans-serif;
+  font-size: 3em;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 1.5em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+hr {
+  margin-top: 100px;
+}
+
+/* Links */
+a:link, a:visited {
+  font-size: 2em;
+  color:white;
+}
+
+a:hover, a:focus {
+  background-color: white;
+  color:blue;
+}
+
+a:active {
+  background-color: blue;
+  color:white;
+}

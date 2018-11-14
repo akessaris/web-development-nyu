@@ -1,0 +1,63 @@
+/* CSS file for cooking.html */
+
+body {
+  background-color: #c71c0b;
+  color: white;
+  background-image: url("images/steak-heart.png");
+  background-size: 200px 200px;
+}
+
+li, p {
+  font-family:sans-serif;
+  font-size: 2em;
+  text-align: center;
+  background-color: red;
+  color:white;
+  padding: 20px;
+  border: 2px solid black;
+}
+
+section {
+  width: 800px;
+  margin: auto;
+  margin-top: 200px;
+}
+
+header {
+  font-family:sans-serif;
+  font-size: 4em;
+  text-align: center;
+  margin-top:70px;
+  margin-bottom: 60px;
+}
+
+nav {
+  font-family: sans-serif;
+  font-size: 3em;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+/* Links */
+a:link, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:focus, a:hover {
+
+}
+
+a:active {
+  opacity: 0.5;
+}

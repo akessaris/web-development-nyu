@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Assignment 2</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+
+  <body>
+    <div id="container">
+
+  <!-- Problem 1 -->
+      <h1>Congratulations, you've WON!</h1>
+
+      <button onclick="change()">Click me!</button>
+
+      <h1 id="gotcha"></h1>
+
+  <!-- Problem 2 -->
+      <h1>Prizes</h1>
+
+      <p id="prize">Prizes</p>
+
+      <button onclick="randArray()">Win a Prize</button>
+
+  <!-- Problem 3 - Paragraphs to be swapped -->
+      <h2>Click on one of the following two paragraphs to swap them!</h2>
+      <p id="1" onclick="swapT()">
+        This is text from the first paragraph.
+      </p>
+
+      <p id="2" onclick="swapT()">
+        This is text from the second paragraph.
+      </p>
+
+  <!-- Problem 4 - Images to be swapped -->
+      <h2>Click on one of the following two images to swap them!</h2>
+      <img src="images/thing1.png" id="img1" onclick="swapI()" width="300" height="300">
+
+      <img src="images/thing2.jpeg" id="img2" onclick="swapI()"width="300" height="300">
+
+  <!-- Problem 5 -->
+      <h2>Click on this image to open a new doc and get more info about it</h2>
+      <img id="image" src="images/scar.jpg" onclick="newdoc()" alt="Battle scars" width="400" height="400">
+
+  <!-- Problem 6 -->
+      <form method="get">
+        <fieldset>
+          <legend>Convert Semesters at NYU to Amassed College Debt!</legend>
+            <label for="semesters">Enter Number of Semesters to Convert to Dollars in Debt:</label>
+              <input type="number" name="semesters" id="semester" placeholder="8" min="0"required><br>
+          </fieldset>
+      </form>
+
+      <button onclick="convert()">Convert</button>
+
+    </div> <!-- Closing div for #container -->
+
+      <script>
+        // Function is called when user clicks button with #scam
+        function change() {
+          // Change style of document
+          obj = document.getElementById("gotcha"); //assign element to variable
+          obj.innerHTML = "Just kidding! You've been had!";//makes element appear
+          obj.style.color = "green"; //change text color
+          obj.style.fontSize = "100px"; //change font size
+          obj.style.fontFamily = "Times";
+          obj.style.border = "solid 3px white"; //change border
+          obj.style.paddingLeft = "50px"; //change padding
+          document.body.style.backgroundColor = "blue"; //change backgorund color
+        }
+      </script>
+
+      <script type="text/javascript" src="js/asg2part1.js"></script>
+  </body>
+
+
+</html>

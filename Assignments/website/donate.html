@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Fund My Extravagancies</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="styles/main.css" >
+
+    <!-- Media query for narrow browser width -->
+    <link rel="stylesheet" media="only screen and (max-width: 600px)" href="styles/mobile.css">
+
+    <!-- Media query for medium browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 601px)" href="styles/main.css">
+
+    <!-- Prevent smartphones from scaling pages down -->
+    <meta name="viewport" content="initial-scale=1"></head>
+  </head>
+
+  <body>
+    <div id="container">
+
+    <!-- Navigation -->
+      <nav>
+        <ul>
+          <li><a href = "index.html">Home</a></li>
+          <li><a href = "biography.html">Biography</a></li>
+          <li><a href = "extravagancies.html">Extravagancies</a></li>
+          <li><a href = "patrons.html">Patrons</a></li>
+          <li><a href = "donate.html">Donate</a></li>
+          <li><a href = "../Assignment4/product.html">Products</a></li>
+        </ul>
+      </nav>
+
+      <div id="content">
+
+        <!-- Header -->
+        <header>
+          <h1>Fund My Extravagancies!</h1>
+        </header>
+
+        <!-- Section -->
+        <section>
+          <!-- Article  -->
+          <article>
+            <h2>Donate</h2>
+            <p>
+              Undoubtably, I've intrigued you into funding my extravagancies. Please fill in your credit card information down below, and remember to check the Patron rewards to see what you'll be getting in return (besides the gift of giving).
+            </p>
+          </article>
+        </section>
+
+        <h2>Payment Form</h2>
+        <form id="donation" method="get">
+          <fieldset>
+            <legend>Personal Info:</legend>
+              <p>
+                <label for="First Name">First Name</label>
+                  <input type="text" name="FirstName" id="firstname" placeholder="John" required><br>
+                <label for="Last Name">Last Name</label>
+                  <input type="text" name="LastName" id="lastname" placeholder="Doe" required><br>
+                <label for="email"> Email</label>
+                  <input type="email" name="email" id="email" placeholder="your_email@website.com" required><br>
+                <label for="Birthday">Birthday</label>
+                  <input type="date" name="birthday" id="birthday" placeholder="MM/DD/YYYY" min="00/00/0000" max="09/24/2017" required>
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Payment Info:</legend>
+              <p>
+                <label for"CC"> Credit Card Type: </label>
+                <br>
+                  <input type="radio" name="cc" id="visa" value="visa">
+                    <label for="visa">Visa</label>
+                  <input type="radio" name="cc" id="mastercard" value="mastercard">
+                    <label for="mastercard">Mastercard</label>
+                  <input type="radio" name="cc" id="amex" value="amex">
+                        <label for="amex">AMEX<br></label>
+
+                <label for="ccnumber"> Credit Card Number: </label>
+                  <input type="number" name="ccn" id="ccn" placeholder="1234-5678-9101-0000" min="0000-0000-000-0000" max="9999-9999-9999-9999" required>
+                <br>
+                <label for="sc"> Security Code: </label>
+                  <input type="number" name="sc" id="sc" required>
+                <br>
+                <label for="zip"> Zip Code: </label>
+                  <input type="number" name="zip" id="zip" placeholder="12345" min="00000" max="99999" required>
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Required Survey:</legend>
+              <p>
+                <label for="country">What country would you want me to send you postcards from first?</label>
+                <select>
+                  <optgroup label="North American Countries">
+                    <option id="USA" value="USA">USA</option>
+                  </optgroup>
+                  <optgroup label="European Countries">
+                    <option selected id="Greece" value="Greece">Greece</option>
+                    <option id="Italy" value="Italy">Italy</option>
+                  </optgroup>
+                </select>
+            </p>
+
+            <p>
+              <label for="Jet Ski">What color jet ski should I get?</label>
+              <input type="color" name="color" id="color">
+            </p>
+
+            <p>
+              <label for="pets">Which pets should I buy?<br></label>
+                <input type="checkbox" name="pet" id="dog" value="dog">
+                  <label for="dog">Dog<br></label>
+                <input type="checkbox" name="pet" id="cat" value="cat">
+                  <label for="cat">Cat<br></label>
+                <input type="checkbox" name="pet" id="rat" value="rat">
+                  <label for="rat">Rat<br></label>
+                <input type="checkbox" name="pet" id="rock" value="rock">
+                  <label for="rock">Rock<br></label>
+
+                <label for="pets">How many of each?<br></label>
+                1<input type="range" name="num_pets" id="num_pets" min="1" max="10">10
+            </p>
+
+            <p>
+              <label for="reason"> Tell me why you decided to Fund My Extravagancies!<br></label>
+              <textarea rows="5" cols="40"></textarea>
+            </p>
+          </fieldset>
+          <button type="button" id="help" onclick="alert('No one can help you.')">Help</button>
+          <input type="submit" value="Submit">
+        </form>
+
+      </div> <!--Closing div for #content-->
+
+      <hr>
+      <hr>
+
+      <!-- Footer -->
+      <footer>
+        <p>
+          Written and Designed By:<br>
+          Alex Kessaris<br>
+        </p>
+
+        <p>Icon Sources:
+          <ul>
+            <li>
+              <div class="source">
+                Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+              </div>
+            </li>
+
+            <li>
+              <div class="source">Icons made by <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski">Zlatko Najdenovski</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            </li>
+
+            <li>
+              <div class="source">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            </li>
+
+            <li>
+              <div clas="source">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            </li>
+          </ul>
+      </footer>
+
+
+
+    </div> <!--Closing div for #container-->
+  </body>
+
+</html>
